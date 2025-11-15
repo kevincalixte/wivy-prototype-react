@@ -12,3 +12,4 @@ plans free premium
 autres infos cgv contact etc et footer
 navbar trop gros ?
 changer les styles en tailwind
+search bar : tags, filtre mots interdits
