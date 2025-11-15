@@ -11,12 +11,19 @@ function Design() {
 
 const styles = {
     design: {
-        height: '40vh',
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(${designImages[0]})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundColor: 'rgba(0, 0, 0, 0.8)',
-        // boxShadow: 'inset 0 80px 60px -50px rgba(0, 0, 0, 0.9)',
+        height: '20vh',
+        backgroundImage: `url(${designImages[0]})`,
+        backgroundSize: 'contain',
+        backgroundRepeat: 'no-repeat',
+        borderRadius: '1rem',
+        position: 'relative',
+        top: '2rem',
+        left: '5rem'
+
+        // width: '',
+        // backgroundPosition: 'center',
+        // backgroundColor: 'rgba(0, 0, 0, 0.8)',
+
     }
 }
 

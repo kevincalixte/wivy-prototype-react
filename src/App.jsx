@@ -12,7 +12,7 @@ function App() {
         <TopMenu></TopMenu>
         <SlideImage></SlideImage>
         {/* <Stats></Stats> */}
-        <Design></Design>
+        {/* <Design></Design> */}
       </ContextSlideImage.Provider>
     </>
   )
