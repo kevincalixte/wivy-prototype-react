@@ -24,6 +24,6 @@ export const loveImages = [
     '/assets/img/love3.jpg',
 ];
 
-const ContextSlideImage = createContext(null);
+const ContextSlideImage = createContext();
 
 export default ContextSlideImage;
