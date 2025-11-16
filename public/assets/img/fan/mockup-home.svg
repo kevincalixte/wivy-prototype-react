@@ -1,0 +1,81 @@
+<svg width="350" height="700" viewBox="0 0 350 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- iPhone Screen -->
+  <rect width="350" height="700" rx="30" fill="#0A0A0A"/>
+  
+  <!-- Status Bar -->
+  <text x="20" y="40" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="16" font-weight="600">19:35</text>
+  
+  <!-- Logo -->
+  <circle cx="175" cy="100" r="40" fill="#EC4899"/>
+  <text x="175" y="115" fill="#FFFFFF" font-family="sans-serif" font-size="32" font-weight="900" text-anchor="middle">W</text>
+  
+  <!-- App Name -->
+  <text x="175" y="165" fill="#FFFFFF" font-family="sans-serif" font-size="28" font-weight="900" text-anchor="middle">WIVY</text>
+  <text x="175" y="190" fill="#EC4899" font-family="sans-serif" font-size="14" font-weight="600" text-anchor="middle">Find your vibe</text>
+  
+  <!-- Categories -->
+  <g transform="translate(30, 230)">
+    <!-- Meet -->
+    <rect x="0" y="0" width="90" height="110" rx="20" fill="#1A1A1A"/>
+    <circle cx="45" cy="40" r="25" fill="#FFFFFF" opacity="0.1"/>
+    <text x="45" y="50" fill="#FFFFFF" font-family="sans-serif" font-size="28" text-anchor="middle">🔍</text>
+    <text x="45" y="80" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="600" text-anchor="middle">Meet</text>
+    <text x="45" y="96" fill="#6B7280" font-family="sans-serif" font-size="11" text-anchor="middle">Rencontres</text>
+    
+    <!-- Friends -->
+    <rect x="100" y="0" width="90" height="110" rx="20" fill="#1A1A1A"/>
+    <circle cx="145" cy="40" r="25" fill="#3B82F6" opacity="0.2"/>
+    <text x="145" y="50" fill="#3B82F6" font-family="sans-serif" font-size="28" text-anchor="middle">👥</text>
+    <text x="145" y="80" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="600" text-anchor="middle">Friends</text>
+    <text x="145" y="96" fill="#6B7280" font-family="sans-serif" font-size="11" text-anchor="middle">Amitiés</text>
+    
+    <!-- Love -->
+    <rect x="200" y="0" width="90" height="110" rx="20" fill="#1A1A1A"/>
+    <circle cx="245" cy="40" r="25" fill="#EC4899" opacity="0.2"/>
+    <text x="245" y="50" fill="#EC4899" font-family="sans-serif" font-size="28" text-anchor="middle">💕</text>
+    <text x="245" y="80" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="600" text-anchor="middle">Love</text>
+    <text x="245" y="96" fill="#6B7280" font-family="sans-serif" font-size="11" text-anchor="middle">Sérieux</text>
+  </g>
+  
+  <!-- Stats -->
+  <g transform="translate(30, 370)">
+    <rect width="290" height="80" rx="20" fill="#1A1A1A"/>
+    
+    <text x="145" y="25" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="600" text-anchor="middle">Activité aujourd'hui</text>
+    
+    <g transform="translate(30, 40)">
+      <text x="35" y="10" fill="#EC4899" font-family="sans-serif" font-size="24" font-weight="700" text-anchor="middle">24</text>
+      <text x="35" y="28" fill="#6B7280" font-family="sans-serif" font-size="11" text-anchor="middle">Likes</text>
+    </g>
+    
+    <g transform="translate(110, 40)">
+      <text x="35" y="10" fill="#3B82F6" font-family="sans-serif" font-size="24" font-weight="700" text-anchor="middle">8</text>
+      <text x="35" y="28" fill="#6B7280" font-family="sans-serif" font-size="11" text-anchor="middle">Matchs</text>
+    </g>
+    
+    <g transform="translate(190, 40)">
+      <text x="35" y="10" fill="#10B981" font-family="sans-serif" font-size="24" font-weight="700" text-anchor="middle">42</text>
+      <text x="35" y="28" fill="#6B7280" font-family="sans-serif" font-size="11" text-anchor="middle">Vues</text>
+    </g>
+  </g>
+  
+  <!-- Action Buttons -->
+  <rect x="30" y="480" width="290" height="55" rx="27" fill="#EC4899"/>
+  <text x="175" y="513" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">Commencer à swiper</text>
+  
+  <rect x="30" y="550" width="290" height="55" rx="27" fill="transparent" stroke="#FFFFFF" stroke-width="2" opacity="0.3"/>
+  <text x="175" y="583" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">Mon profil</text>
+  
+  <!-- Bottom Bar -->
+  <rect y="650" width="350" height="50" fill="#1A1A1A"/>
+  
+  <!-- Nav Icons -->
+  <circle cx="70" cy="675" r="20" fill="#EC4899" opacity="0.2"/>
+  <text x="70" y="683" fill="#EC4899" font-family="sans-serif" font-size="20" text-anchor="middle">🏠</text>
+  
+  <text x="140" y="683" fill="#6B7280" font-family="sans-serif" font-size="20" text-anchor="middle">💬</text>
+  <text x="210" y="683" fill="#6B7280" font-family="sans-serif" font-size="20" text-anchor="middle">❤️</text>
+  <text x="280" y="683" fill="#6B7280" font-family="sans-serif" font-size="20" text-anchor="middle">👤</text>
+  
+  <rect x="130" y="690" width="90" height="4" rx="2" fill="#4B5563"/>
+</svg>

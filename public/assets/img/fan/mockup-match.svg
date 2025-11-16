@@ -1,0 +1,53 @@
+<svg width="350" height="700" viewBox="0 0 350 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- iPhone Screen -->
+  <rect width="350" height="700" rx="30" fill="#0A0A0A"/>
+  
+  <!-- Status Bar -->
+  <text x="20" y="40" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="16" font-weight="600">19:35</text>
+  
+  <!-- Top Bar -->
+  <text x="175" y="90" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="20" font-weight="700" text-anchor="middle">Match!</text>
+  
+  <!-- Success Animation Background -->
+  <circle cx="175" cy="250" r="120" fill="#EC4899" opacity="0.1"/>
+  <circle cx="175" cy="250" r="90" fill="#EC4899" opacity="0.2"/>
+  
+  <!-- Profile Photos -->
+  <defs>
+    <clipPath id="leftClip">
+      <circle cx="110" cy="250" r="50"/>
+    </clipPath>
+    <clipPath id="rightClip">
+      <circle cx="240" cy="250" r="50"/>
+    </clipPath>
+  </defs>
+  
+  <!-- Left Profile -->
+  <circle cx="110" cy="250" r="52" fill="#3B82F6"/>
+  <text x="110" y="263" fill="#FFFFFF" font-family="sans-serif" font-size="32" font-weight="700" text-anchor="middle">Vous</text>
+  
+  <!-- Right Profile -->
+  <circle cx="240" cy="250" r="52" fill="#EC4899"/>
+  <text x="240" y="263" fill="#FFFFFF" font-family="sans-serif" font-size="32" font-weight="700" text-anchor="middle">E</text>
+  
+  <!-- Heart Icon -->
+  <path d="M 175 200 C 165 190 150 190 145 200 C 140 210 150 225 175 245 C 200 225 210 210 205 200 C 200 190 185 190 175 200 Z" fill="#EC4899"/>
+  
+  <!-- Match Text -->
+  <text x="175" y="370" fill="#EC4899" font-family="sans-serif" font-size="36" font-weight="900" text-anchor="middle">C'est un Match!</text>
+  
+  <!-- Description -->
+  <text x="175" y="410" fill="#9CA3AF" font-family="sans-serif" font-size="14" text-anchor="middle">Vous et Emma vous êtes likés</text>
+  <text x="175" y="430" fill="#9CA3AF" font-family="sans-serif" font-size="14" text-anchor="middle">mutuellement 💕</text>
+  
+  <!-- Buttons -->
+  <rect x="40" y="480" width="270" height="50" rx="25" fill="#EC4899"/>
+  <text x="175" y="513" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">Envoyer un message</text>
+  
+  <rect x="40" y="550" width="270" height="50" rx="25" fill="transparent" stroke="#EC4899" stroke-width="2"/>
+  <text x="175" y="583" fill="#EC4899" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">Continuer à swiper</text>
+  
+  <!-- Bottom Bar -->
+  <rect y="650" width="350" height="50" fill="#1A1A1A"/>
+  <rect x="130" y="670" width="90" height="4" rx="2" fill="#4B5563"/>
+</svg>
