@@ -8,14 +8,13 @@ function SlideImage() {
   return (
     <>
       {/* 
-        h-[40dvh] = height: 40dvh (40% de la hauteur viewport dynamique)
-        dvh = dynamic viewport height (s'adapte automatiquement à la barre d'adresse mobile)
+        h-96 = height: 24rem (384px de hauteur)
         bg-cover = background-size: cover (image couvre tout)
         bg-center = background-position: center (image centrée)
-        bg-black/80 = background-color: rgba(0,0,0,0.8) (fond noir transparent)
+        bg-black = background-color: black (fond noir)
       */}
       <div 
-        className="h-[40dvh] p-4 bg-cover bg-center bg-black/80"
+        className="h-96 p-4 bg-cover bg-center bg-black"
         style={{
           backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.5) 100%), url(${friendsImages[0]})`
         }}
