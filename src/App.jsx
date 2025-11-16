@@ -7,6 +7,7 @@ import SampleImage from './components/SampleImage/SampleImage'
 import SubscribePlans from './components/SubscribePlans/SubscribePlans'
 import Presentation
  from './components/Presentation/Presentation'
+import BorderShadow from './components/BorderShadow/BorderShadow'
 function App() {
 
   return (
@@ -14,8 +15,9 @@ function App() {
       <ContextSlideImage.Provider>
 
         <SlideImage></SlideImage>
-        <Presentation></Presentation>
+        <BorderShadow></BorderShadow>
         <SampleImage></SampleImage>
+        <Presentation></Presentation>
         <SubscribePlans></SubscribePlans>
         {/* <Stats></Stats> */}
       </ContextSlideImage.Provider>
