@@ -15,7 +15,6 @@ function App() {
   return (
     <>
       <ContextSlideImage.Provider>
-
         <SlideImage></SlideImage>
         <BorderShadow>
           <Button className="border px-5 py-1 rounded-4xl bg-transparent text-white border-white">Chat Now</Button>

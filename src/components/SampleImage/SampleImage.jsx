@@ -7,15 +7,15 @@ function FanImage() {
     useEffect(() => {
         const interval = setInterval(() => {
             setActiveIndex((prev) => (prev + 1) % fanImages.length)
-        }, 4000)
-        
+        }, 2000)
+
         return () => clearInterval(interval)
     }, [])
 
     return (
         <div className="w-full max-w-7xl mx-auto px-5 py-10 flex flex-col items-center gap-8">
             <h2 className="text-black text-2xl md:text-3xl font-medium text-center">
-                Découvrez WIVY, où chaque conversation compte.
+                Discover WIVY, where every conversation counts.
             </h2>
 
             <div className="relative w-64 h-128 md:w-72 md:h-144 flex items-center justify-center">
@@ -24,12 +24,13 @@ function FanImage() {
                         key={index}
                         src={image}
                         alt={`Écran ${index + 1}`}
-                        className="absolute w-full h-full object-contain rounded-[1.875rem] border-[0.1875rem] border-white transition-opacity duration-1000 ease-in-out"
+                        className={`absolute w-full h-full object-contain rounded-[1.875rem] border-[0.1875rem] border-white ${index === activeIndex ?
+                            'rotate-y-360' : ''}`}
                         style={{ opacity: index === activeIndex ? 1 : 0 }}
                     />
                 ))}
             </div>
-
+            {/* transition-opacity duration-1000 ease-in-out */}
             <div className="flex gap-2.5">
                 {fanImages.map((_, index) => (
                     <div

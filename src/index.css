@@ -67,10 +67,23 @@ table {
   border-spacing: 0;
 }
 
+
+/* ANIMATIONS */
 @keyframes slideFromRight {
   from {
     transform: translateX(100vw);
   }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100vw);
+  }
+
   to {
     transform: translateX(0);
   }
