@@ -6,8 +6,10 @@ import Stats from './components/Stats/Stats'
 import SampleImage from './components/SampleImage/SampleImage'
 import SubscribePlans from './components/SubscribePlans/SubscribePlans'
 import Presentation
- from './components/Presentation/Presentation'
+  from './components/Presentation/Presentation'
 import BorderShadow from './components/BorderShadow/BorderShadow'
+import Button from './components/Button/Button'
+
 function App() {
 
   return (
@@ -15,7 +17,10 @@ function App() {
       <ContextSlideImage.Provider>
 
         <SlideImage></SlideImage>
-        <BorderShadow></BorderShadow>
+        <BorderShadow>
+          <Button className="border px-5 py-1 rounded-4xl bg-transparent text-white border-white">Chat Now</Button>
+          <Button className="border px-5 py-1 rounded-4xl bg-transparent text-white border-white">Sign In</Button>
+        </BorderShadow>
         <SampleImage></SampleImage>
         <SubscribePlans></SubscribePlans>
         <Presentation></Presentation>

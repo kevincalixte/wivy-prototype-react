@@ -14,3 +14,15 @@ navbar trop gros ? font gros ?s+ fixed ?
 changer les styles en tailwind
 search bar : tags, filtre mots interdits
 hover des menus meet etc cacher les autres animation !
+
+--------------
+
+TODO
+
+--------------
+
+Inclinaison verticale changement d'image design 
+Plans rounded 
+Presentation emojis et texte
+Slide images
+Slide boutons

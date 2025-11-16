@@ -1,13 +1,15 @@
 import React from 'react'
 
-function BorderShadow({ color = "rgba(255,255,255,1)" }) {
+function BorderShadow({ color = "rgba(255,255,255,1)", children }) {
     return (
         <div
-            className="w-full h-20 -mt-20"
+            className="w-full h-20 -mt-20 flex items-start justify-center gap-5"
             style={{
                 background: `linear-gradient(rgba(0,0,0,0), ${color})`
             }}
-        />
+        >
+            {children}
+        </div>
     )
 }
 

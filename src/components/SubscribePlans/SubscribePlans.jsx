@@ -18,8 +18,7 @@ const CheckNo = ({ children }) => (
 function SubscribePlans() {
 
   return (
-    <div className="p-10 bg-black text-white flex justify-between">
-
+    <div className="rounded-xl mx-8 p-5 bg-black text-white flex justify-between">
       <div>
 
         <h2 className='text-center mb-3'>Free</h2>
