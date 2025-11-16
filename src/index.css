@@ -13,6 +13,7 @@ body {
 }
 
 body {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
@@ -64,4 +65,13 @@ a {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
 }

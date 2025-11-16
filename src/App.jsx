@@ -3,18 +3,21 @@ import TopMenu from './components/TopMenu/TopMenu'
 import SlideImage from './components/SlideImage/SlideImage'
 import ContextSlideImage from './contexts/context-SlideImage'
 import Stats from './components/Stats/Stats'
-import Design from './components/Design/Design'
-import FanImage from './components/FanImage/FanImage'
+import SampleImage from './components/SampleImage/SampleImage'
+import SubscribePlans from './components/SubscribePlans/SubscribePlans'
+import Presentation
+ from './components/Presentation/Presentation'
 function App() {
 
   return (
     <>
       <ContextSlideImage.Provider>
-       
+
         <SlideImage></SlideImage>
-        <FanImage></FanImage> 
+        <Presentation></Presentation>
+        <SampleImage></SampleImage>
+        <SubscribePlans></SubscribePlans>
         {/* <Stats></Stats> */}
-        {/* <Design></Design> */}
       </ContextSlideImage.Provider>
     </>
   )

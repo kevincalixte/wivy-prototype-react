@@ -4,9 +4,10 @@ import { createContext } from "react";
 
 // MEET
 export const meetImages = [
-    '/assets/img/meet1.jpg',
-    '/assets/img/meet2.jpg',
-    '/assets/img/meet3.jpg',
+    '/assets/img/home/album-meet/meet1.jpg',
+    '/assets/img/home/album-meet/meet2.jpg',
+    '/assets/img/home/album-meet/meet3.jpg',
+    '/assets/img/home/album-meet/meet4.jpg',
 ];
 
 // FRIENDS
@@ -19,9 +20,10 @@ export const friendsImages = [
 
 // LOVE
 export const loveImages = [
-    '/assets/img/love1.jpg',
-    '/assets/img/love2.jpg',
-    '/assets/img/love3.jpg',
+    '/assets/img/home/album-love/love1.jpg',
+    '/assets/img/home/album-love/love2.jpg',
+    '/assets/img/home/album-love/love3.jpg',
+    '/assets/img/home/album-love/love4.jpg',
 ];
 
 const ContextSlideImage = createContext();
