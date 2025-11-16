@@ -17,8 +17,8 @@ function App() {
         <SlideImage></SlideImage>
         <BorderShadow></BorderShadow>
         <SampleImage></SampleImage>
-        <Presentation></Presentation>
         <SubscribePlans></SubscribePlans>
+        <Presentation></Presentation>
         {/* <Stats></Stats> */}
       </ContextSlideImage.Provider>
     </>
