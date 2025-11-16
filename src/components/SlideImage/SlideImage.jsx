@@ -13,10 +13,10 @@ function SlideImage() {
         bg-center = background-position: center (image centrée)
         bg-black = background-color: black (fond noir)
       */}
-      <div 
-        className="h-96 p-4 bg-cover bg-center bg-black"
+      <div
+        className="h-96 p-4 bg-cover bg-center"
         style={{
-          backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.5) 100%), url(${friendsImages[0]})`
+          backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.8) , rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.5), url(${friendsImages[0]})`
         }}
       >
         <TopMenu></TopMenu>
