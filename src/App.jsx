@@ -9,6 +9,8 @@ import Presentation
   from './components/Presentation/Presentation'
 import BorderShadow from './components/BorderShadow/BorderShadow'
 import Button from './components/Button/Button'
+import FeedBack from './components/FeedBack/FeedBack'
+import Footer from './components/Footer/Footer'
 
 function App() {
 
@@ -23,6 +25,8 @@ function App() {
         <SampleImage></SampleImage>
         <SubscribePlans></SubscribePlans>
         <Presentation></Presentation>
+        <FeedBack></FeedBack>
+        <Footer></Footer>
         {/* <Stats></Stats> */}
       </ContextSlideImage.Provider>
     </>
