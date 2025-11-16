@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <ContextSlideImage.Provider>
-        <TopMenu></TopMenu>
+       
         <SlideImage></SlideImage>
         {/* <Stats></Stats> */}
         {/* <Design></Design> */}

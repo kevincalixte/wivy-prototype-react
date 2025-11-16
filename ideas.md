@@ -10,6 +10,7 @@ presentation du site
 download app
 plans free premium
 autres infos cgv contact etc et footer
-navbar trop gros ?
+navbar trop gros ? font gros ?s+ fixed ?
 changer les styles en tailwind
 search bar : tags, filtre mots interdits
+hover des menus meet etc cacher les autres animation !
