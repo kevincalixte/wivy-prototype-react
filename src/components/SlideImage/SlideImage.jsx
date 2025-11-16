@@ -10,7 +10,7 @@ function SlideImage() {
     <div
       className="h-96 p-4 bg-cover bg-center"
       style={{
-        backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.8) , rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.5) 100%), url(${friendsImages[0]})`
+        backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.8) , rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.5) 100%), url(${friendsImages[3]})`
       }}
     >
       <TopMenu></TopMenu>

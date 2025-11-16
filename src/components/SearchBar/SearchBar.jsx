@@ -6,7 +6,7 @@ import { Search } from 'lucide-react'
 function SearchBar() {
   return (
 <>
-  <input type="search" className='border-none' placeholder='Rechercher ...' />
+  <input type="search" className=' text-white' placeholder='Rechercher ...' />
 </>
     // <div className="w-80 border border-gray-300 rounded-4xl text-center">
     //   <div className=" border-gray-300 p-0.5">
