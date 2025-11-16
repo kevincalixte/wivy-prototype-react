@@ -1,0 +1,68 @@
+<svg width="350" height="700" viewBox="0 0 350 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- iPhone Screen -->
+  <rect width="350" height="700" rx="30" fill="#0A0A0A"/>
+  
+  <!-- Status Bar -->
+  <text x="20" y="40" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="16" font-weight="600">19:35</text>
+  
+  <!-- Top Bar -->
+  <text x="175" y="90" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="20" font-weight="700" text-anchor="middle">Messages</text>
+  
+  <!-- Chat 1 -->
+  <g transform="translate(20, 120)">
+    <!-- Avatar -->
+    <circle cx="30" cy="30" r="28" fill="#EC4899"/>
+    <text x="30" y="38" fill="#FFFFFF" font-family="sans-serif" font-size="20" font-weight="700" text-anchor="middle">S</text>
+    <circle cx="52" cy="50" r="6" fill="#10B981"/> <!-- Online -->
+    
+    <!-- Chat Info -->
+    <text x="75" y="25" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="600">Sophie</text>
+    <text x="75" y="45" fill="#9CA3AF" font-family="sans-serif" font-size="14">Salut! On se voit ce soir? 😊</text>
+    <text x="290" y="25" fill="#9CA3AF" font-family="sans-serif" font-size="12" text-anchor="end">18:42</text>
+    
+    <!-- Unread badge -->
+    <circle cx="300" cy="40" r="10" fill="#EC4899"/>
+    <text x="300" y="44" fill="#FFFFFF" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">3</text>
+  </g>
+  
+  <!-- Chat 2 -->
+  <g transform="translate(20, 220)">
+    <circle cx="30" cy="30" r="28" fill="#3B82F6"/>
+    <text x="30" y="38" fill="#FFFFFF" font-family="sans-serif" font-size="20" font-weight="700" text-anchor="middle">M</text>
+    <circle cx="52" cy="50" r="6" fill="#F59E0B"/> <!-- Away -->
+    
+    <text x="75" y="25" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="600">Marc</text>
+    <text x="75" y="45" fill="#9CA3AF" font-family="sans-serif" font-size="14">Cool! À plus tard 👍</text>
+    <text x="290" y="25" fill="#9CA3AF" font-family="sans-serif" font-size="12" text-anchor="end">15:12</text>
+  </g>
+  
+  <!-- Chat 3 -->
+  <g transform="translate(20, 320)">
+    <circle cx="30" cy="30" r="28" fill="#8B5CF6"/>
+    <text x="30" y="38" fill="#FFFFFF" font-family="sans-serif" font-size="20" font-weight="700" text-anchor="middle">L</text>
+    <circle cx="52" cy="50" r="6" fill="#EF4444"/> <!-- Offline -->
+    
+    <text x="75" y="25" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="600">Laura</text>
+    <text x="75" y="45" fill="#9CA3AF" font-family="sans-serif" font-size="14">Merci pour hier! 💕</text>
+    <text x="290" y="25" fill="#9CA3AF" font-family="sans-serif" font-size="12" text-anchor="end">Hier</text>
+  </g>
+  
+  <!-- Chat 4 -->
+  <g transform="translate(20, 420)">
+    <circle cx="30" cy="30" r="28" fill="#10B981"/>
+    <text x="30" y="38" fill="#FFFFFF" font-family="sans-serif" font-size="20" font-weight="700" text-anchor="middle">T</text>
+    <circle cx="52" cy="50" r="6" fill="#6B7280"/> <!-- Long time -->
+    
+    <text x="75" y="25" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="600">Thomas</text>
+    <text x="75" y="45" fill="#9CA3AF" font-family="sans-serif" font-size="14">Hey! Tu es là?</text>
+    <text x="290" y="25" fill="#9CA3AF" font-family="sans-serif" font-size="12" text-anchor="end">23 Oct</text>
+  </g>
+  
+  <!-- New Message Button -->
+  <circle cx="300" cy="620" r="28" fill="#EC4899"/>
+  <path d="M 290 620 L 310 620 M 300 610 L 300 630" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Bottom Bar -->
+  <rect y="650" width="350" height="50" fill="#1A1A1A"/>
+  <rect x="130" y="670" width="90" height="4" rx="2" fill="#4B5563"/>
+</svg>

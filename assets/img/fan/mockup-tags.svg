@@ -1,0 +1,88 @@
+<svg width="350" height="700" viewBox="0 0 350 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- iPhone Screen -->
+  <rect width="350" height="700" rx="30" fill="#0A0A0A"/>
+  
+  <!-- Status Bar -->
+  <text x="20" y="40" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="16" font-weight="600">19:35</text>
+  
+  <!-- Top Bar -->
+  <text x="175" y="90" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="20" font-weight="700" text-anchor="middle">Recherche</text>
+  
+  <!-- Search Bar -->
+  <rect x="20" y="110" width="310" height="45" rx="22" fill="#1A1A1A"/>
+  <text x="50" y="138" fill="#6B7280" font-family="sans-serif" font-size="15">Rechercher par tags...</text>
+  <circle cx="305" cy="132" r="12" fill="#EC4899"/>
+  <path d="M 300 132 L 310 132 M 305 127 L 305 137" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Popular Tags Title -->
+  <text x="20" y="190" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="600">Tags populaires</text>
+  
+  <!-- Tags Grid -->
+  <g transform="translate(20, 210)">
+    <!-- Row 1 -->
+    <rect x="0" y="0" width="90" height="35" rx="18" fill="#EC4899"/>
+    <text x="45" y="23" fill="#FFFFFF" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">#Sport</text>
+    
+    <rect x="100" y="0" width="90" height="35" rx="18" fill="#3B82F6"/>
+    <text x="145" y="23" fill="#FFFFFF" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">#Sortie</text>
+    
+    <rect x="200" y="0" width="110" height="35" rx="18" fill="#8B5CF6"/>
+    <text x="255" y="23" fill="#FFFFFF" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">#Voyage</text>
+    
+    <!-- Row 2 -->
+    <rect x="0" y="45" width="100" height="35" rx="18" fill="#10B981"/>
+    <text x="50" y="68" fill="#FFFFFF" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">#Cinéma</text>
+    
+    <rect x="110" y="45" width="90" height="35" rx="18" fill="#F59E0B"/>
+    <text x="155" y="68" fill="#FFFFFF" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">#Musique</text>
+    
+    <rect x="210" y="45" width="100" height="35" rx="18" fill="#EF4444"/>
+    <text x="260" y="68" fill="#FFFFFF" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">#Gaming</text>
+    
+    <!-- Row 3 -->
+    <rect x="0" y="90" width="95" height="35" rx="18" fill="#14B8A6"/>
+    <text x="47" y="113" fill="#FFFFFF" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">#Lecture</text>
+    
+    <rect x="105" y="90" width="80" height="35" rx="18" fill="#F472B6"/>
+    <text x="145" y="113" fill="#FFFFFF" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">#Café</text>
+    
+    <rect x="195" y="90" width="115" height="35" rx="18" fill="#6366F1"/>
+    <text x="252" y="113" fill="#FFFFFF" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">#Restaurant</text>
+  </g>
+  
+  <!-- My Tags Title -->
+  <text x="20" y="360" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="600">Mes tags</text>
+  
+  <!-- My Tags -->
+  <g transform="translate(20, 380)">
+    <rect x="0" y="0" width="85" height="35" rx="18" fill="#1A1A1A" stroke="#EC4899" stroke-width="2"/>
+    <text x="42" y="23" fill="#EC4899" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">#Sport</text>
+    
+    <rect x="95" y="0" width="100" height="35" rx="18" fill="#1A1A1A" stroke="#8B5CF6" stroke-width="2"/>
+    <text x="145" y="23" fill="#8B5CF6" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">#Voyage</text>
+    
+    <rect x="205" y="0" width="90" height="35" rx="18" fill="#1A1A1A" stroke="#10B981" stroke-width="2"/>
+    <text x="250" y="23" fill="#10B981" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">#Cinéma</text>
+  </g>
+  
+  <!-- Create Tag Button -->
+  <rect x="20" y="450" width="310" height="50" rx="25" fill="#EC4899" opacity="0.2"/>
+  <text x="175" y="482" fill="#EC4899" font-family="sans-serif" font-size="15" font-weight="700" text-anchor="middle">+ Créer un nouveau tag</text>
+  
+  <!-- Suggestions Title -->
+  <text x="20" y="540" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="600">Suggestions</text>
+  <text x="20" y="560" fill="#6B7280" font-family="sans-serif" font-size="13">Personnes avec des tags similaires</text>
+  
+  <!-- Profile Card -->
+  <rect x="20" y="580" width="310" height="60" rx="15" fill="#1A1A1A"/>
+  <circle cx="50" cy="610" r="20" fill="#3B82F6"/>
+  <text x="50" y="616" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="700" text-anchor="middle">M</text>
+  <circle cx="65" cy="625" r="5" fill="#10B981"/>
+  
+  <text x="80" y="605" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="600">Marc, 28 ans</text>
+  <text x="80" y="620" fill="#6B7280" font-family="sans-serif" font-size="11">#Sport #Voyage #Gaming</text>
+  
+  <!-- Bottom Bar -->
+  <rect y="650" width="350" height="50" fill="#1A1A1A"/>
+  <rect x="130" y="670" width="90" height="4" rx="2" fill="#4B5563"/>
+</svg>
