@@ -8,18 +8,13 @@ import ContextSlideImage from '../../contexts/context-SlideImage.jsx'
 function SlideImage() {
 
   const [currentImage, setCurrentImage] = useState(0);
-  const [prevImage, setPrevImage] = useState(0);
 
   useEffect(() => {
-    let timeoutId;
-    setPrevImage(currentImage);
-
-    timeoutId = setTimeout(() => {
+    const interval = setInterval(() => {
       setCurrentImage(prev => (prev + 1) % friendsImages.length);
     }, 10000);
-    return () => clearTimeout(timeoutId);
-  }, [currentImage, friendsImages.length]);
-
+    return () => clearInterval(interval);
+  }, []);
   return (
 
     <div
