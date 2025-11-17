@@ -26,10 +26,10 @@ function Footer() {
         <ul>
           <li className='mb-5'>Liens</li>
           <div className='flex flex-col gap-3'>
-            <li className={liHoverBlue}><a href="">Conditions générales</a></li>
-            <li className={liHoverBlue}><a href="">Charte d'utilisation des cookies</a></li>
-            <li className={liHoverBlue}><a href="">Règles de communauté</a></li>
-            <li className={liHoverBlue}><a href="">Signaler un contenu illégal</a></li>
+            <li className={liHoverBlue}><a href="">Terms & Conditions</a></li>
+            <li className={liHoverBlue}><a href="">Cookie Policy</a></li>
+            <li className={liHoverBlue}><a href="">Community Guidelines</a></li>
+            <li className={liHoverBlue}><a href="">Report Illegal Content</a></li>
           </div>
         </ul>
       </div>

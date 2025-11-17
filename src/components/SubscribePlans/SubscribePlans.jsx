@@ -21,7 +21,7 @@ function SubscribePlans() {
     <div className="rounded-xl mx-8 p-5 bg-black text-white text-center flex justify-around">
       <div>
 
-        <h2 className='font-bold  mb-3'>Free <span className='line-through'>5€ / month</span></h2>
+        <h2 className='font-bold  mb-3'>Free</h2>
         <ul>
           <CheckYes>Illimited chat</CheckYes>
           <CheckNo>Limited swipes</CheckNo>
@@ -33,8 +33,8 @@ function SubscribePlans() {
         <h2 className='font-bold mb-3'>Premium <span>5€ / month</span></h2>
         <ul >
           <CheckYes>Illimited chat</CheckYes>
-          <CheckNo>Limited swipes</CheckNo>
-          <CheckNo>Limited profiles</CheckNo>
+          <CheckYes>Limited swipes</CheckYes>
+          <CheckYes>Limited profiles</CheckYes>
         </ul>
       </div>
 
