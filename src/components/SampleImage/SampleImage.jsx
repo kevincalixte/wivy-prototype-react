@@ -30,7 +30,7 @@ function FanImage() {
                     />
                 ))}
             </div>
-            {/* transition-opacity duration-1000 ease-in-out */}
+  
             <div className="flex gap-2.5">
                 {fanImages.map((_, index) => (
                     <div

@@ -18,10 +18,10 @@ const CheckNo = ({ children }) => (
 function SubscribePlans() {
 
   return (
-    <div className="rounded-xl mx-8 p-5 bg-black text-white flex justify-between">
+    <div className="rounded-xl mx-8 p-5 bg-black text-white text-center flex justify-around">
       <div>
 
-        <h2 className='text-center mb-3'>Free</h2>
+        <h2 className='font-bold  mb-3'>Free <span className='line-through'>5€ / month</span></h2>
         <ul>
           <CheckYes>Illimited chat</CheckYes>
           <CheckNo>Limited swipes</CheckNo>
@@ -30,7 +30,7 @@ function SubscribePlans() {
       </div>
 
       <div>
-        <h2 className='text-center mb-3'>Premium</h2>
+        <h2 className='font-bold mb-3'>Premium <span>5€ / month</span></h2>
         <ul >
           <CheckYes>Illimited chat</CheckYes>
           <CheckNo>Limited swipes</CheckNo>
