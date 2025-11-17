@@ -7,10 +7,10 @@ function Footer() {
   return (
 
     <div className=' bg-black text-white '>
-      <div className=' flex justify-around p-10 w-full  mt-25'>
+      <div className=' flex justify-around gap-5 p-10 w-full mt-25'>
 
         <ul >
-          <li className='mb-5'>Suivez nous sur : </li>
+          <li className='mb-5'>Follow us on : </li>
 
           <div className='flex gap-2'>
             <li className={liHoverMagenta}><a href=""><FaFacebook /></a></li>
@@ -24,7 +24,7 @@ function Footer() {
         </ul>
 
         <ul>
-          <li className='mb-5'>Liens :</li>
+          <li className='mb-5'>Links :</li>
           <div className='flex flex-col gap-3'>
             <li className={liHoverBlue}><a href="">Terms & Conditions</a></li>
             <li className={liHoverBlue}><a href="">Cookie Policy</a></li>
@@ -35,7 +35,7 @@ function Footer() {
       </div>
 
       <div className='text-center py-5'>
-        <p >Copyright - Kevin Calixte - Formation Ceppic 2025-2026</p>
+        <p >Copyright - Kevin Calixte - Ceppic Dev Web</p>
       </div>
 
     </div>
