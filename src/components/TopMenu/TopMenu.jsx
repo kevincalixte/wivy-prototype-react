@@ -5,7 +5,7 @@ import useTopMenuAnimation from '../../hooks/useTopMenuAnimation';
 import { useState } from 'react';
 
 // FONCTION QUI GERE LE MENU DU HAUT
-function TopMenu() {
+function TopMenu({ setCurrentAlbum, meetImages, friendsImages, loveImages }) {
 
     const [showButtons, setShowButtons] = useTopMenuAnimation()
     // const [animationLogo, setAnimationLogo] = useState(false);
@@ -13,6 +13,7 @@ function TopMenu() {
 
     const handlerClickMeet = (event) => {
         // setAnimationLogo(true);
+        setCurrentAlbum(meetImages);
         setShowButtons(false);
         setShowSearchBar(true);
     }
@@ -29,9 +30,15 @@ function TopMenu() {
                 </a>
 
                 <ul className={`${showButtons ? 'flex' : 'hidden'} gap-2 items-center`}>
-                    <li className='flex gap-1 items-center hover:font-bold hover:scale-110 hover:bg-white/10 px-3 py-2 rounded-full transition-all transform-gpu'><a href="#" className='flex gap-1' onClick={handlerClickMeet}><Search /><span>Meet</span></a></li>
-                    <li className='flex gap-1 items-center hover:font-bold hover:text-white hover:scale-110 hover:bg-blue-500/20 px-3 py-2 rounded-full transition-all transform-gpu'><a href="#" className='flex gap-1'><Users /><span>Friends</span></a></li>
-                    <li className='flex gap-1 items-center hover:font-bold hover:text-white hover:scale-110 hover:bg-fuchsia-500/20 px-3 py-2 rounded-full transition-all transform-gpu'><a href="#" className='flex gap-1 '><Heart /><span>Love</span></a></li>
+                    <li className='flex gap-1 items-center hover:font-bold hover:scale-110 hover:bg-white/10 px-3 py-2 rounded-full transition-all transform-gpu'>
+                        <a href="#" className='flex gap-1' onClick={handlerClickMeet}><Search /><span>Meet</span></a>
+                    </li>
+                    <li className='flex gap-1 items-center hover:font-bold hover:text-white hover:scale-110 hover:bg-blue-500/20 px-3 py-2 rounded-full transition-all transform-gpu'>
+                        <a href="#" className='flex gap-1' onClick={() => setCurrentAlbum(friendsImages)}><Users /><span>Friends</span></a>
+                    </li>
+                    <li className='flex gap-1 items-center hover:font-bold hover:text-white hover:scale-110 hover:bg-fuchsia-500/20 px-3 py-2 rounded-full transition-all transform-gpu'>
+                        <a href="#" className='flex gap-1 ' onClick={() => setCurrentAlbum(loveImages)}><Heart /><span>Love</span></a>
+                    </li>
                 </ul>
             </nav>
 

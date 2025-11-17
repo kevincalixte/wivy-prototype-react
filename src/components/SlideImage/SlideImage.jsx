@@ -1,5 +1,5 @@
 import React, { use, useContext, useEffect, useState } from 'react'
-import { meetImages, friendsImages , loveImages} from '../../contexts/context-SlideImage.jsx'
+import { meetImages, friendsImages, loveImages } from '../../contexts/context-SlideImage.jsx'
 import TopMenu from '../TopMenu/TopMenu.jsx'
 import Button from '../Button/Button.jsx'
 import ContextSlideImage from '../../contexts/context-SlideImage.jsx'
@@ -8,22 +8,26 @@ import ContextSlideImage from '../../contexts/context-SlideImage.jsx'
 function SlideImage() {
 
   const [currentImage, setCurrentImage] = useState(0);
+  const [currentAlbum, setCurrentAlbum] = useState(meetImages);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImage(prev => (prev + 1) % friendsImages.length);
+      setCurrentImage(prev => (prev + 1) % currentAlbum.length);
     }, 10000);
     return () => clearInterval(interval);
-  }, []);
+  }, [currentAlbum]);
   return (
 
     <div
       className="h-96 p-4 bg-cover bg-center"
       style={{
-        backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.8) , rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.5) 100%), url(${meetImages[currentImage]})`
+        backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.8) , rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.5) 100%), url(${currentAlbum[currentImage]})`
       }}
     >
-      <TopMenu></TopMenu>
+      <TopMenu setCurrentAlbum={setCurrentAlbum}
+        meetImages={meetImages}
+        friendsImages={friendsImages}
+        loveImages={loveImages}></TopMenu>
 
     </div>
   )
