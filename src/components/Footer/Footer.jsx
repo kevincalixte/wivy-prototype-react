@@ -24,7 +24,7 @@ function Footer() {
         </ul>
 
         <ul>
-          <li className='mb-5'>Liens</li>
+          <li className='mb-5'>Liens :</li>
           <div className='flex flex-col gap-3'>
             <li className={liHoverBlue}><a href="">Terms & Conditions</a></li>
             <li className={liHoverBlue}><a href="">Cookie Policy</a></li>
