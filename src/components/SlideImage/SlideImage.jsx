@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { friendsImages } from '../../contexts/context-SlideImage.jsx'
 import TopMenu from '../TopMenu/TopMenu.jsx'
 import Button from '../Button/Button.jsx'
@@ -7,20 +7,26 @@ import ContextSlideImage from '../../contexts/context-SlideImage.jsx'
 // FONCTION QUI GERE LE SLIDE D'IMAGES PAR CATEGORIE
 function SlideImage() {
 
-//   const { currentAlbum, setCurrentAlbum, albumMeet, albumFriends, albumLove } = useContext(ContextSlideImage);
+  const [currentImage, setCurrentImage] = useState(0);
 
-//    useEffect(() => {
-//     setCurrentAlbum(albumMeet);
-//   }, [albumMeet, setCurrentAlbum]);
+  useEffect(() => {
 
-// console.log(albumMeet)
+    const interval = setInterval(() => {
+      const nextIndex = setCurrentImage(prevImage => (prevImage + 1) % friendsImages.length);
+      console.log('>>> NEXT', nextIndex)
+      return nextIndex
+    }, 3000)
+
+    return () => clearInterval(interval);
+
+  }, [])
 
   return (
 
     <div
       className="h-96 p-4 bg-cover bg-center"
       style={{
-        backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.8) , rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.5) 100%), url(${friendsImages[3]})`
+        backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.8) , rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.5) 100%), url(${friendsImages[currentImage]})`
       }}
     >
       <TopMenu></TopMenu>
