@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { use, useContext, useEffect, useState } from 'react'
 import { friendsImages } from '../../contexts/context-SlideImage.jsx'
 import TopMenu from '../TopMenu/TopMenu.jsx'
 import Button from '../Button/Button.jsx'
@@ -8,18 +8,17 @@ import ContextSlideImage from '../../contexts/context-SlideImage.jsx'
 function SlideImage() {
 
   const [currentImage, setCurrentImage] = useState(0);
+  const [prevImage, setPrevImage] = useState(0);
 
   useEffect(() => {
+    let timeoutId;
+    setPrevImage(currentImage);
 
-    const interval = setInterval(() => {
-      const nextIndex = setCurrentImage(prevImage => (prevImage + 1) % friendsImages.length);
-      console.log('>>> NEXT', nextIndex)
-      return nextIndex
-    }, 3000)
-
-    return () => clearInterval(interval);
-
-  }, [])
+    timeoutId = setTimeout(() => {
+      setCurrentImage(prev => (prev + 1) % friendsImages.length);
+    }, 5000);
+    return () => clearTimeout(timeoutId);
+  }, [currentImage, friendsImages.length]);
 
   return (
 
