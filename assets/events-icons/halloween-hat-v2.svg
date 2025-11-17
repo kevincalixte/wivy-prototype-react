@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<defs>
+	<radialGradient id="halloweenOrange" cx="50%" cy="30%" r="80%">
+		<stop offset="0%" stop-color="#ffd180"/>
+		<stop offset="100%" stop-color="#ff6f00"/>
+	</radialGradient>
+	<radialGradient id="halloweenBlack" cx="50%" cy="60%" r="80%">
+		<stop offset="0%" stop-color="#757575"/>
+		<stop offset="100%" stop-color="#222"/>
+	</radialGradient>
+	<radialGradient id="halloweenShadow" cx="50%" cy="80%" r="80%">
+		<stop offset="0%" stop-color="#fff" stop-opacity="0.5"/>
+		<stop offset="100%" stop-color="#bdbdbd" stop-opacity="0.1"/>
+	</radialGradient>
+</defs>
+<ellipse cx="32" cy="56" rx="22" ry="7" fill="url(#halloweenBlack)"/>
+<path d="M32 14c-7 0-14 7-14 14 0 7 7 14 14 14s14-7 14-14c0-7-7-14-14-14z" fill="url(#halloweenOrange)" transform="rotate(18 32 32)"/>
+<polygon points="32,14 28,32 36,32" fill="url(#halloweenBlack)" transform="rotate(18 32 32)"/>
+<ellipse cx="48" cy="12" rx="5" ry="5" fill="url(#halloweenOrange)"/>
+<ellipse cx="32" cy="56" rx="22" ry="7" fill="url(#halloweenShadow)" opacity=".5"/>
+<ellipse cx="32" cy="44" rx="14" ry="4" fill="url(#halloweenBlack)"/>
+</svg>

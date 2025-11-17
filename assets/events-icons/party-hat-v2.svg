@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<defs>
+	<radialGradient id="partyBlue" cx="50%" cy="30%" r="80%">
+		<stop offset="0%" stop-color="#b3e5fc"/>
+		<stop offset="100%" stop-color="#0288d1"/>
+	</radialGradient>
+	<radialGradient id="partyYellow" cx="50%" cy="60%" r="80%">
+		<stop offset="0%" stop-color="#fffde7"/>
+		<stop offset="100%" stop-color="#ffd600"/>
+	</radialGradient>
+	<radialGradient id="partyShadow" cx="50%" cy="80%" r="80%">
+		<stop offset="0%" stop-color="#fff" stop-opacity="0.5"/>
+		<stop offset="100%" stop-color="#bdbdbd" stop-opacity="0.1"/>
+	</radialGradient>
+</defs>
+<ellipse cx="32" cy="56" rx="22" ry="7" fill="url(#partyShadow)"/>
+<polygon points="32,12 18,48 46,48" fill="url(#partyBlue)" transform="rotate(15 32 32)"/>
+<circle cx="50" cy="10" r="6" fill="url(#partyYellow)"/>
+<ellipse cx="32" cy="44" rx="14" ry="4" fill="url(#partyYellow)"/>
+<ellipse cx="32" cy="56" rx="22" ry="7" fill="url(#partyShadow)" opacity=".5"/>
+</svg>
