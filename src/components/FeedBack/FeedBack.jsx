@@ -5,7 +5,7 @@ function FeedBack() {
     const fillStars = Array(5).fill(0);
     return (
 
-        <div className="rounded-xl m-auto p-5 bg-black text-white w-1/2 " >
+        <div className="rounded-xl m-auto p-5 bg-black text-white w-1/2" >
             <div className='flex gap-1.5 items-center mb-5'>
                 <p className='mr-2 text-xl'>Benjamin</p>
                 {

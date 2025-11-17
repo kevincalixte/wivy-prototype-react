@@ -11,24 +11,25 @@ import FeedBack from './components/FeedBack/FeedBack'
 import Footer from './components/Footer/Footer'
 
 function App() {
-
   return (
-    <> 
+    <div className="min-h-screen flex flex-col">
       <ContextSlideImage.Provider value={{}}>
-        <SlideImage></SlideImage>
-        <BorderShadow>
-          <Button>Chat Now</Button>
-          <Button >Sign In</Button>
-        </BorderShadow>
-        <SampleImage></SampleImage>
-        <SubscribePlans></SubscribePlans>
-        <Presentation></Presentation>
-        <FeedBack></FeedBack>
-        <Footer></Footer>
-        {/* <Stats></Stats> */}
+        <main className="flex-1 flex flex-col">
+          <SlideImage />
+          <BorderShadow>
+            <Button>Chat Now</Button>
+            <Button>Sign In</Button>
+          </BorderShadow>
+          <SampleImage />
+          <SubscribePlans />
+          <Presentation />
+          <FeedBack />
+          {/* <Stats /> */}
+        </main>
+        <Footer />
       </ContextSlideImage.Provider>
-    </>
-  )
+    </div>
+  );
 }
 
 export default App
