@@ -1,5 +1,5 @@
 import React, { use, useContext, useEffect, useState } from 'react'
-import { friendsImages } from '../../contexts/context-SlideImage.jsx'
+import { meetImages, friendsImages , loveImages} from '../../contexts/context-SlideImage.jsx'
 import TopMenu from '../TopMenu/TopMenu.jsx'
 import Button from '../Button/Button.jsx'
 import ContextSlideImage from '../../contexts/context-SlideImage.jsx'
@@ -20,7 +20,7 @@ function SlideImage() {
     <div
       className="h-96 p-4 bg-cover bg-center"
       style={{
-        backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.8) , rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.5) 100%), url(${friendsImages[currentImage]})`
+        backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.8) , rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.5) 100%), url(${meetImages[currentImage]})`
       }}
     >
       <TopMenu></TopMenu>
