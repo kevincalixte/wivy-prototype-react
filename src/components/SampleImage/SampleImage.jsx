@@ -24,8 +24,7 @@ function FanImage() {
                         key={index}
                         src={image}
                         alt={`Écran ${index + 1}`}
-                        className={`absolute w-full h-full object-contain rounded-[1.875rem] border-[0.1875rem] border-white transition-transform duration-2000 ${index === activeIndex ? 'rotate-360' : ''}`}
-                        style={{ opacity: index === activeIndex ? 1 : 0 }}
+                        className={`absolute w-full h-full object-contain rounded-[1.875rem] border-[0.1875rem] border-white transition-all duration-700 ${index === activeIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
                     />
                 ))}
             </div>
