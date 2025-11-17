@@ -6,7 +6,7 @@ import { Search } from 'lucide-react'
 function SearchBar({ onBlur }) {
   return (
     <div className='animate-[slideFromLeft_0.4s_ease-out] ml-2 text-black rounded-full px-3 py-2 w-70 bg-white/20'>
-        <input type="search" className=' duration-300 outline-none text-white w-full' placeholder='Rechercher ...' autoFocus maxLength={25} onBlur={onBlur} />
+        <input type="search" className=' duration-300 outline-none text-white w-full' placeholder='Search ...' autoFocus maxLength={25} onBlur={onBlur} />
     </div>
   )
 }
