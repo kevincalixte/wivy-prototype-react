@@ -13,8 +13,8 @@ import Footer from './components/Footer/Footer'
 function App() {
 
   return (
-    <>
-      <ContextSlideImage.Provider>
+    <> 
+      <ContextSlideImage.Provider value={{}}>
         <SlideImage></SlideImage>
         <BorderShadow>
           <Button>Chat Now</Button>
