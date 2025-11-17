@@ -16,7 +16,7 @@ function SlideImage() {
 
     timeoutId = setTimeout(() => {
       setCurrentImage(prev => (prev + 1) % friendsImages.length);
-    }, 5000);
+    }, 10000);
     return () => clearTimeout(timeoutId);
   }, [currentImage, friendsImages.length]);
 
