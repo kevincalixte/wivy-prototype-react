@@ -7,7 +7,7 @@ function FanImage() {
     useEffect(() => {
         const interval = setInterval(() => {
             setActiveIndex((prev) => (prev + 1) % fanImages.length)
-        }, 2000)
+        }, 7000)
 
         return () => clearInterval(interval)
     }, [])
@@ -24,13 +24,12 @@ function FanImage() {
                         key={index}
                         src={image}
                         alt={`Écran ${index + 1}`}
-                        className={`absolute w-full h-full object-contain rounded-[1.875rem] border-[0.1875rem] border-white ${index === activeIndex ?
-                            'rotate-y-360' : ''}`}
+                        className={`absolute w-full h-full object-contain rounded-[1.875rem] border-[0.1875rem] border-white transition-transform duration-2000 ${index === activeIndex ? 'rotate-360' : ''}`}
                         style={{ opacity: index === activeIndex ? 1 : 0 }}
                     />
                 ))}
             </div>
-  
+
             <div className="flex gap-2.5">
                 {fanImages.map((_, index) => (
                     <div
