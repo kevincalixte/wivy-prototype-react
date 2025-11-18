@@ -41,7 +41,7 @@ function App() {
           }
         </SlideImage>
         <BorderShadow>
-          <Button>Chat Now</Button>
+          <Button>Chat test</Button>
           <Button onClick={handlerClick}>Sign In</Button>
         </BorderShadow>
         <SampleImage></SampleImage>
