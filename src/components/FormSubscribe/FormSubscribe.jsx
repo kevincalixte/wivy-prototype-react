@@ -18,7 +18,7 @@ function FormSubscribe({setFormSubscribeVisible} ) {
     setFormSubscribeVisible(false);
   }
     return (
-        <div className='max-w-full h-[90%] text-center  text-white text-lg bg-black opacity-55 rounded-2xl z-50 p-5'>
+        <div className='h-[90%] text-center  text-white text-lg bg-black opacity-55 rounded-2xl z-50 p-5'>
 
 
             <h1 className='py-4 text-2xl font-bold'>We need your number 😉</h1>
