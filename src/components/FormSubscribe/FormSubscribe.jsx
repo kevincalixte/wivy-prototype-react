@@ -20,7 +20,6 @@ function FormSubscribe({setFormSubscribeVisible} ) {
     return (
         <div className='h-[90%] text-center  text-white text-lg bg-black opacity-55 rounded-2xl z-50 p-5'>
 
-
             <h1 className='py-4 text-2xl font-bold'>We need your number 😉</h1>
             <div className='flex items-center justify-center gap-1'>
                 <Input className="w-30" label="Country" type="text" placeholder="FR +33" />
