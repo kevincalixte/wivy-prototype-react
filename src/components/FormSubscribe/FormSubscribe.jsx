@@ -27,7 +27,7 @@ function FormSubscribe({setFormSubscribeVisible} ) {
                 <Input className= "w-50" label="Phone Number" type="text" placeholder="" />
             </div>
             <p className='text-sm text-left'>You will receive a text message to confirm your registration. Message and data usage charges may apply. <span className='text-emerald-300 hover:font-bold'><a href="">Have you lost your number?</a></span> </p>
-            <div className='flex gap-10 justify-center '>
+            <div className='flex gap-10 justify-center'>
                 <Button className='mt-7' onClick={handlerClick}>Cancel</Button>
                 <Button className='mt-7'>Next</Button>
             </div>
