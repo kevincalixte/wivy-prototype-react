@@ -37,7 +37,7 @@ function App() {
       <ContextSlideImage.Provider value={{}}>
         <SlideImage onShowForm={FormSubscribeVisible}>
           {FormSubscribeVisible &&
-            <FormSubscribe></FormSubscribe>
+            <FormSubscribe setFormSubscribeVisible={setFormSubscribeVisible}></FormSubscribe>
           }
         </SlideImage>
         <BorderShadow>
