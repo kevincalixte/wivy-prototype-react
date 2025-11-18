@@ -12,8 +12,8 @@ function FormSubscribe() {
                 <Input className="w-30" label="Country" type="text" placeholder="FR +33" />
                 <Input label="Phone Number" type="text" placeholder="" />
             </div>
-            <p className='text-sm flex text-left'>You will receive a text message to confirm your registration. Message and data usage charges may apply. <span className='text-emerald-300 hover:font-bold'><a href="">Have you lost your number?</a></span> </p>
-            <div className=''>
+            <p className='text-sm text-left'>You will receive a text message to confirm your registration. Message and data usage charges may apply. <span className='text-emerald-300 hover:font-bold'><a href="">Have you lost your number?</a></span> </p>
+            <div className='flex gap-10 justify-center '>
                 <Button className='mt-5'>Cancel</Button>
                 <Button className='mt-5'>Next</Button>
             </div>
