@@ -32,6 +32,6 @@ function FormSubscribe({setFormSubscribeVisible} ) {
             </div>
         </div> 
     ) 
-}
+} 
 
 export default FormSubscribe
