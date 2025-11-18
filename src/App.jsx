@@ -26,7 +26,7 @@ function App() {
     const TopMenu = document.querySelector('.TopMenu');
     const buttonsTopMenu = TopMenu.querySelectorAll('li');
     buttonsTopMenu.forEach(button => {
-      button.style.opacity = 0;
+      button.style.display = 'none';
     })
     setFormSubscribeVisible(true);
   }
