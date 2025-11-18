@@ -3,10 +3,9 @@ import { meetImages, friendsImages, loveImages } from '../../contexts/context-Sl
 import TopMenu from '../TopMenu/TopMenu.jsx'
 import Button from '../Button/Button.jsx'
 import ContextSlideImage from '../../contexts/context-SlideImage.jsx'
-import FormSubscribe from '../FormSubscribe/FormSubscribe.jsx'
 
 // FONCTION QUI GERE LE SLIDE D'IMAGES PAR CATEGORIE
-function SlideImage() {
+function SlideImage(props) {
 
   const [currentImage, setCurrentImage] = useState(0);
   const [currentAlbum, setCurrentAlbum] = useState(meetImages);
@@ -17,6 +16,8 @@ function SlideImage() {
     }, 10000);
     return () => clearInterval(interval);
   }, [currentAlbum]);
+
+  props.onShowForm && console.log("form visible");
   return (
     <>
       <div
@@ -30,6 +31,7 @@ function SlideImage() {
           friendsImages={friendsImages}
           loveImages={loveImages}></TopMenu>
 
+        {props.children}
       </div>
     </>
   )

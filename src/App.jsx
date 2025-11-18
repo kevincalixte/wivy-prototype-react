@@ -9,19 +9,40 @@ import BorderShadow from './components/BorderShadow/BorderShadow'
 import Button from './components/Button/Button'
 import FeedBack from './components/FeedBack/FeedBack'
 import Footer from './components/Footer/Footer'
-import { useState , useEffect} from 'react'
+import { useState, useEffect } from 'react'
+import FormSubscribe from './components/FormSubscribe/FormSubscribe'
 
 
 function App() {
+
+  const [FormSubscribeVisible, setFormSubscribeVisible] = useState(false);
+
+  const handlerClick = () => {
+    const BorderShadow = document.querySelector('.Bordershadow');
+    const buttonsBorder = BorderShadow.querySelectorAll('button');
+    buttonsBorder.forEach(button => {
+      button.style.opacity = 0;
+    })
+    const TopMenu = document.querySelector('.TopMenu');
+    const buttonsTopMenu = TopMenu.querySelectorAll('li');
+    buttonsTopMenu.forEach(button => {
+      button.style.opacity = 0;
+    })
+    setFormSubscribeVisible(true);
+  }
 
   return (
 
     <>
       <ContextSlideImage.Provider value={{}}>
-        <SlideImage></SlideImage>
+        <SlideImage onShowForm={FormSubscribeVisible}>
+          {FormSubscribeVisible &&
+            <FormSubscribe></FormSubscribe>
+          }
+        </SlideImage>
         <BorderShadow>
           <Button>Chat Now</Button>
-          <Button >Sign In</Button>
+          <Button onClick={handlerClick}>Sign In</Button>
         </BorderShadow>
         <SampleImage></SampleImage>
         <SubscribePlans></SubscribePlans>
@@ -32,6 +53,7 @@ function App() {
       </ContextSlideImage.Provider>
 
     </>
+
   )
 }
 
