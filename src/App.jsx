@@ -21,7 +21,7 @@ function App() {
     const BorderShadow = document.querySelector('.Bordershadow');
     const buttonsBorder = BorderShadow.querySelectorAll('button');
     buttonsBorder.forEach(button => {
-      button.style.opacity = 0;
+      button.style.display = 'none';
     })
     const TopMenu = document.querySelector('.TopMenu');
     const buttonsTopMenu = TopMenu.querySelectorAll('li');
