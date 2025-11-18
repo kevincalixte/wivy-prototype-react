@@ -3,6 +3,7 @@
 - [] Vide 
 - [🚀] Presentation 
 - [🚀] Modale de connexion/inscription
+- [🛠️] Bouton Love etc reste de la meme couleur 
 - [💡] Bouton Download App
 - [💡] Search bar : tags, filtre mots interdits
 - [💡] Events : chapeau de noel sur le logo voir 
