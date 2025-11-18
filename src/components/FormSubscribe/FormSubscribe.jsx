@@ -30,7 +30,7 @@ function FormSubscribe({setFormSubscribeVisible} ) {
                 <Button className='mt-7' onClick={handlerClick}>Cancel</Button>
                 <Button className='mt-7'>Next</Button>
             </div>
-        </div>
+        </div> 
     )
 }
 
