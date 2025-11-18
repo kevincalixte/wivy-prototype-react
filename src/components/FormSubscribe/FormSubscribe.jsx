@@ -18,17 +18,17 @@ function FormSubscribe({setFormSubscribeVisible} ) {
     setFormSubscribeVisible(false);
   }
     return (
-        <div className='h-[80%] text-center  text-white text-lg bg-black opacity-55 rounded-2xl z-50 p-5'>
+        <div className='h-[90%] text-center  text-white text-lg bg-black opacity-55 rounded-2xl z-50 p-5'>
 
             <h1 className='py-4 text-2xl font-bold'>We need your number 😉</h1>
-            <div className='flex items-center justify-center gap-5'>
+            <div className='flex items-center justify-center gap-1'>
                 <Input className="w-30" label="Country" type="text" placeholder="FR +33" />
                 <Input label="Phone Number" type="text" placeholder="" />
             </div>
             <p className='text-sm text-left'>You will receive a text message to confirm your registration. Message and data usage charges may apply. <span className='text-emerald-300 hover:font-bold'><a href="">Have you lost your number?</a></span> </p>
             <div className='flex gap-10 justify-center '>
-                <Button className='mt-5' onClick={handlerClick}>Cancel</Button>
-                <Button className='mt-5'>Next</Button>
+                <Button className='mt-7' onClick={handlerClick}>Cancel</Button>
+                <Button className='mt-7'>Next</Button>
             </div>
         </div>
     )
