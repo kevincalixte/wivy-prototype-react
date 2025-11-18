@@ -9,11 +9,14 @@ import BorderShadow from './components/BorderShadow/BorderShadow'
 import Button from './components/Button/Button'
 import FeedBack from './components/FeedBack/FeedBack'
 import Footer from './components/Footer/Footer'
+import { useState , useEffect} from 'react'
+
 
 function App() {
 
   return (
-    <> 
+
+    <>
       <ContextSlideImage.Provider value={{}}>
         <SlideImage></SlideImage>
         <BorderShadow>
@@ -27,6 +30,7 @@ function App() {
         <Footer></Footer>
         {/* <Stats></Stats> */}
       </ContextSlideImage.Provider>
+
     </>
   )
 }

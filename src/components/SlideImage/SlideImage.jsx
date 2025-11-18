@@ -3,6 +3,7 @@ import { meetImages, friendsImages, loveImages } from '../../contexts/context-Sl
 import TopMenu from '../TopMenu/TopMenu.jsx'
 import Button from '../Button/Button.jsx'
 import ContextSlideImage from '../../contexts/context-SlideImage.jsx'
+import FormSubscribe from '../FormSubscribe/FormSubscribe.jsx'
 
 // FONCTION QUI GERE LE SLIDE D'IMAGES PAR CATEGORIE
 function SlideImage() {
@@ -17,19 +18,20 @@ function SlideImage() {
     return () => clearInterval(interval);
   }, [currentAlbum]);
   return (
+    <>
+      <div
+        className="h-96 p-4 bg-cover bg-center"
+        style={{
+          backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.8) , rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.5) 100%), url(${currentAlbum[currentImage]})`
+        }}
+      >
+        <TopMenu setCurrentAlbum={setCurrentAlbum}
+          meetImages={meetImages}
+          friendsImages={friendsImages}
+          loveImages={loveImages}></TopMenu>
 
-    <div
-      className="h-96 p-4 bg-cover bg-center"
-      style={{
-        backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.8) , rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.5) 100%), url(${currentAlbum[currentImage]})`
-      }}
-    >
-      <TopMenu setCurrentAlbum={setCurrentAlbum}
-        meetImages={meetImages}
-        friendsImages={friendsImages}
-        loveImages={loveImages}></TopMenu>
-
-    </div>
+      </div>
+    </>
   )
 }
 
