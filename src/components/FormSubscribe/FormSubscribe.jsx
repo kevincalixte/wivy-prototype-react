@@ -31,7 +31,7 @@ function FormSubscribe({setFormSubscribeVisible} ) {
                 <Button className='mt-7'>Next</Button>
             </div>
         </div> 
-    )
+    ) 
 }
 
 export default FormSubscribe
