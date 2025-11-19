@@ -3,7 +3,7 @@ import React from 'react'
 function UserList() {
     return (
 
-        <div className='p-3'>
+        <div className='p-1.5'>
             <article className=" h-35 bg-zinc-900 rounded-2xl flex overflow-hidden">
                 <div className="h-full aspect-square relative">
                     <div className="absolute bottom-1.5 right-1.5">
