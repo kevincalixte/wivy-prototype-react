@@ -5,16 +5,9 @@ import UserList from '../components/UserList/UserList.jsx';
 function Feed() {
   return (
 
-    <div className='bg-neutral-900 min-h-screen text-white flex flex-col'>
+    <div className='bg-neutral-900 text-white'>
       <TopMenu />
-      <div className='bg-neutral-800 flex-1'>
-        <UserList></UserList>
-        <UserList></UserList>
-        <UserList></UserList>
-        <UserList></UserList>
-        <UserList></UserList>
-        <UserList></UserList>
-        <UserList></UserList>
+      <div className='bg-neutral-800'>
         <UserList></UserList>
         <UserList></UserList>
         <UserList></UserList>
