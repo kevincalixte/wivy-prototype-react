@@ -34,10 +34,10 @@ function FormSubscribe({ setFormSubscribeVisible }) {
     const Text = form.querySelector('.Text');
     Title.textContent = 'Check your messages 📩';
     Text.innerHTML = 'We have sent you a code to verify your phone number. Please enter the code in the field below. <span class="text-emerald-300 hover:font-bold"><a href="#">Send again ?</a></span>';
-    // const buttonRetry = document.querySelector('.ButtonRetry');
+    const buttonQuit = document.querySelector('.Button');
     // console.log(buttonRetry)
     // buttonRetry.classList.remove('hidden');
-    // buttonRetry.style.display = 'block';
+    buttonQuit.style.display = 'block';
     // const divInput = form.creatEelement('div');
     const Input = form.querySelector('.Input')
 
@@ -51,9 +51,9 @@ function FormSubscribe({ setFormSubscribeVisible }) {
   // SERT A RENVOYER LE CODE DE SECURITE PAR SMS
   const handlerClickRetry = () => { }
   return (
+    
     <div className='FormSubscribe h-[90%] text-center  text-white text-lg bg-black opacity-55 rounded-2xl z-50 p-5'>
-
-      <h1 className='Title py-4 text-2xl font-bold'>We need your number 😉</h1>
+    <h1 className='Title py-4 text-2xl font-bold'>We need your number 😉</h1>
       <div className='flex items-center justify-center gap-1'>
         <Input className="Input w-30" label="Country" type="text" placeholder="FR +33" />
         <Input className="w-50" label="Phone Number" type="text" placeholder="" />
@@ -66,7 +66,7 @@ function FormSubscribe({ setFormSubscribeVisible }) {
       {/* <Button className='ButtonRetry hidden' onClick={handlerClickRetry}>Retry</Button> */}
 
 
-      <Button className='Button mt-7 ' onClick={handlerClickCancel}>Quit</Button>
+      <Button className='Button hidden m-auto mt-7' onClick={handlerClickCancel}>Quit</Button>
 
     </div>
   )
