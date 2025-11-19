@@ -11,10 +11,11 @@ import FeedBack from './components/FeedBack/FeedBack'
 import Footer from './components/Footer/Footer'
 import { useState, useEffect } from 'react'
 import FormSubscribe from './components/FormSubscribe/FormSubscribe'
+import Dashboard from './pages/Feed'
 
 
 function App() {
-
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [FormSubscribeVisible, setFormSubscribeVisible] = useState(false);
 
   const handlerClick = () => {
@@ -31,8 +32,11 @@ function App() {
     setFormSubscribeVisible(true);
   }
 
-  return (
+  if (isLoggedIn) {
+    return <Dashboard />;
+  }
 
+  return (
     <>
       <ContextSlideImage.Provider value={{}}>
         <SlideImage onShowForm={FormSubscribeVisible}>
@@ -41,7 +45,7 @@ function App() {
           }
         </SlideImage>
         <BorderShadow>
-          <Button>Chat Now</Button>
+          <Button onClick={() => setIsLoggedIn(true)}>Chat Now</Button>
           <Button onClick={handlerClick}>Sign In</Button>
         </BorderShadow>
         <SampleImage></SampleImage>
@@ -51,10 +55,8 @@ function App() {
         <Footer></Footer>
         {/* <Stats></Stats> */}
       </ContextSlideImage.Provider>
-
     </>
-
-  )
+  );
 }
 
 export default App

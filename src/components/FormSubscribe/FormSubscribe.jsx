@@ -51,9 +51,9 @@ function FormSubscribe({ setFormSubscribeVisible }) {
   // SERT A RENVOYER LE CODE DE SECURITE PAR SMS
   const handlerClickRetry = () => { }
   return (
-    
-    <div className='ease-in-out FormSubscribe h-[90%] text-center  text-white text-lg bg-black/60 opacity-95 rounded-2xl z-50 p-5'>
-    <h1 className='Title py-4 text-2xl font-bold'>We need your number 😉</h1>
+
+    <div className='ease-in-out FormSubscribe h-[90%] text-center  text-white text-lg bg-black/60 opacity-95 rounded-2xl z-50 p-5 '>
+      <h1 className='Title py-4 text-2xl font-bold'>We need your number 😉</h1>
       <div className='flex items-center justify-center gap-1'>
         <Input className="Input w-30" label="Country" type="text" placeholder="FR +33" />
         <Input className="w-50" label="Phone Number" type="text" placeholder="" />
