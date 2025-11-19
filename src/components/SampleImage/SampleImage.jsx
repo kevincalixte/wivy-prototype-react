@@ -24,7 +24,7 @@ function FanImage() {
                         key={index}
                         src={image}
                         alt={`Écran ${index + 1}`}
-                        className={`transition-all duration-700 absolute w-full h-full object-contain rounded-3xl border-4 border-white bg-transparent shadow-2xl
+                        className={`transition-all duration-300 absolute w-full h-full object-contain rounded-3xl border-4 border-black bg-black shadow-2xl
                                                     ${index === activeIndex ? 'opacity-100 z-10 scale-100' : 'opacity-0 z-0 scale-105'}
                                                     hover:scale-110 hover:shadow-[0_8px_32px_rgba(0,0,0,0)]`
                         }
