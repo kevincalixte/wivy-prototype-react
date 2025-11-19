@@ -17,7 +17,8 @@ function SlideImage(props) {
     return () => clearInterval(interval);
   }, [currentAlbum]);
 
-  props.onShowForm && console.log("form visible");
+  props.onShowForm;
+  
   return (
     <>
       <div
