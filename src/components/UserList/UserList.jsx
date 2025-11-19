@@ -1,13 +1,38 @@
 import React from 'react'
 
-function UserList() {
+function UserList({state}) {
+    const states = [
+        "assets/img/user/user-connected.svg",
+        "assets/img/user/user-away.svg",
+        "assets/img/user/user-busy.svg",
+        "assets/img/user/user-offline.svg"
+    ];
+    
+    let stateImg;
+    switch (state) {
+        case 0:
+            stateImg = states[0];
+            break;
+        case 1:
+            stateImg = states[1];
+            break;
+        case 2:
+            stateImg = states[2];
+            break;
+        case 3:
+            stateImg = states[3];
+            break;
+        default:
+            stateImg = states[3];
+    }
+
     return (
 
         <div className='p-1.5'>
             <article className=" h-35 bg-zinc-900 rounded-2xl flex overflow-hidden">
                 <div className="h-full aspect-square relative">
                     <div className="absolute bottom-1.5 right-1.5">
-                        <img src="assets/img/user/user-connected.svg" alt="En ligne" className="w-5 h-5" />
+                        <img src={stateImg} alt="En ligne" className="w-5 h-5" />
                     </div>
 
                     <img

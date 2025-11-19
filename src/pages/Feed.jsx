@@ -8,20 +8,22 @@ function Feed() {
     <div className='bg-neutral-900 text-white'>
       <TopMenu />
       <div className='bg-neutral-800'>
-        <UserList></UserList>
-        <UserList></UserList>
-        <UserList></UserList>
-        <UserList></UserList>
-        <UserList></UserList>
-        <UserList></UserList>
-        <UserList></UserList>
-        <UserList></UserList>
-        <UserList></UserList>
-        <UserList></UserList>
-        <UserList></UserList>
-        <UserList></UserList>
-        <UserList></UserList>
-        <UserList></UserList>
+        <UserList state={0}></UserList>
+        <UserList state={0}></UserList>
+        <UserList state={0}></UserList>
+        <UserList state={1}></UserList>
+        <UserList state={1}></UserList>
+        <UserList state={2}></UserList>
+        <UserList state={3}></UserList>
+        <UserList state={3}></UserList>
+        <UserList state={4}></UserList>
+        <UserList state={4}></UserList>
+        <UserList state={4}></UserList>
+        <UserList state={4}></UserList>
+        <UserList state={4}></UserList>
+        <UserList state={4}></UserList>
+        <UserList state={4}></UserList>
+        <UserList state={4}></UserList>
       </div>
     </div>
 
