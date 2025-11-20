@@ -26,7 +26,7 @@ function TopMenu({ setCurrentAlbum, meetImages, friendsImages, loveImages }) {
                     href=""
                     className={'animate-[slideFromRight_0.6s_ease-out]'}
                 >
-                    <img className='w-12' src='assets/logos/wivy-app-logo-transparent.png' alt="Wivy Logo" />
+                    <img className='w-12' src='/assets/logos/wivy-app-logo-transparent.png' alt="Wivy Logo" />
                 </a>
 
                 <ul className={`${showButtons ? 'flex' : 'hidden'} gap-2 items-center`}>
